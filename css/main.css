@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+:root {
+    --dark-color: #0E1C35;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 400 */
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    font-family: Barlow Condensed;
+
+}
+
+
+.the-main-div {
+    height: 50px !important;
+    background-color: #0E1C35;
+}
+
+/* left side  */
+.left-side {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.left-side-items {
+    list-style-type: none;
+    margin: 0px 26px 0px 0px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+/* right side */
+
+.right-side {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.right-side-items {
+    list-style-type: none;
+    margin: 0px 26px 0px 0px;
+    font-size: 10px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.right-side-items a i {
+    color: #fff;
+    transition: .5s ease-in-out;
+
+}
+
+.right-side-items a i:hover {
+    transform: rotateY(180deg);
+    transition: .5s ease-in-out;
+    color: #FFA801;
+}
+
+/* media of top nav  */
+@media only screen and (max-width : 780px) {
+
+    .top-nav {
+        display: none;
+    }
+
+
+}
+
+/* bottom navbar */
+
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration-line: none;
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+.navbar {
+    position: relative;
+    height: 105px;
+    line-height: 105px;
+
+}
+
+.nav-item:hover {
+    text-transform: uppercase;
+}
+
+.nav-item .submenu {
+    position: absolute;
+    width: 180px;
+    background: #fff;
+    height: 110px;
+    line-height: 110px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+    padding: 17px 0;
+    border-top: 5px solid #014b85;
+    top: 105px;
+    left: 1224px;
+    display: none;
+    transition: 1s ease-in-out;
+    opacity: 0;
+}
+
+
+.nav-item .submenu li {
+    margin: 10px 5px 5px;
+    padding: 2px;
+    line-height: 20px;
+}
+
+.nav-item:hover .submenu {
+    display: block;
+    transition: 2s ease-out;
+    opacity: 1;
+    padding: 3px;
+
+}
+
+/* hover not founded waited */
+
+
+.nav-item .element {
+    left: 1291px;
+    height: 69px;
+
+}
+
+
+
+@media only screen and (max-width : 780px) {
+
+    .nav-item .submenu li {
+        margin: 10px 5px 5px;
+        padding: 2px;
+        line-height: 105px;
+    }
+
+}
